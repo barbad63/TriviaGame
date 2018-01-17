@@ -4,24 +4,34 @@
 
 var game = {
 	secCount: 0,
-	count: 0,
+	count: 31,
 	correctAns: 0,
 	wrongAns: 0,
 	compAnsArr: ["Don"],
 	userAnsArr: ["Holy Grail"],
-	questions: ["What is your name?", "What is your quest?", "Where were you born?"],
-	answers: ["Don", "Holy Grail", "Buffalo"],
+	QandA: [{
+		q: "What is my name?",
+		ans: ["Don", "Bob", "Fred", "Lebron"]
+	}, {
+		q: "What is your Quest?",
+		ans: ["food", "drink", "Holy Grail", "developer"]
+	}],
+	// answers: ["Don", "Holy Grail", "Buffalo"],
+
 	init: function(){
 		count = 0;
 	},
 	increment: function(){
-		console.log(this.count++);
-		if (this.count == 31){
+		console.log(this.count--);
+		if (this.count == 0){
 			clearInterval(secCount);
 		}
 	},
-	newQ: function(){
-		console.log("newQ");		
+	startTime: function(){
+		console.log("building the question and displaying it");
+		console.log(this.QandA[0].q);
+		var ptr = this.QandA[0].q;
+		$("#quest").html(this.QandA[0].ans[0]);	
 	}
 
 }
@@ -32,7 +42,11 @@ $(document).ready(function(){
 	$("button").click(function(){
 		console.log("Hi");
 		$("button").hide();
-		game.init;
+		$(".restart").toggleClass("center");
+		game.init();
+		$(".question").toggleClass("hidden");
+		game.startTime();
+
 
 	});
 

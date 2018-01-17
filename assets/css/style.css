@@ -1,0 +1,21 @@
+html{
+
+}
+body{
+	background-image: url("../../assets/images/polka-dots.png");
+}
+
+h1{
+	text-align: center;
+	text-shadow: 2px 2px #88cc00;
+	font-size: 4vw;
+}
+.col-xs-6{
+	background-color: #ffff99;
+}
+.center{
+	margin: 150px 0;
+}
+h2,h3{
+	text-align: center;
+}
