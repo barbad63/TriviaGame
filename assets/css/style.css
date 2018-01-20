@@ -19,3 +19,7 @@ h1{
 h2,h3{
 	text-align: center;
 }
+#ans0, #ans1, #ans2, #ans3 {
+	width: 50%;
+	margin-left: 25%;
+}
