@@ -19,7 +19,7 @@ var game = {
 	}, {
 		q: "Which planet has the most oxygen?",
 		ans: ["Saturn", "Earth", "Neptune", "Mars"],
-		cAnsIndex: 0 //Correct Answer Index
+		cAnsIndex: 1 //Correct Answer Index
 	}, {
 		q: "What is my name?",
 		ans: ["Don", "Bob", "Fred", "Lebron"],
